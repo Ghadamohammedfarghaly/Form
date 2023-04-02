@@ -1,0 +1,204 @@
+                     <!--بسم الله الرحمن الرحيم-->
+<html>
+<head>
+<title>Sign Up Form</title>
+<link rel="icon" href="../../../Users/Hp/Desktop/All/Life/hope2.jpg"/>
+<meta name="author"    content="ghada mohammed"/>
+<meta name="description"  content="sign up form"/>
+<meta name="viewport"  content="width=device-width,initial-scale=1.0"/>
+                          <!--css-->
+<style>
+   body{
+      /* background-image: url(../../../Users/Hp/Desktop/All/Life/hope2.jpg);*/
+      background-color:antiquewhite;
+    }
+   p{
+    text-align:center;
+    color:magenta;
+    position:absolute;
+    top:100px;
+    right:580px;
+    font-family:'arial';
+    font-style:italic;
+    font-size:30px;
+   }
+   p:hover{
+    color:blueviolet;
+   }
+   form fieldset{
+    position:absolute;
+    top:180px;
+    width:400px;
+    height:240px;
+    left:448px;
+    line-height:40px;
+    color:blueviolet;
+    font-size:20px;
+    border-radius:20px;
+    font-style:italic;
+    border:5px outset magenta;
+    background-color:lavenderblush;
+    display:flex-box;
+   }
+   form #name1,#email1,#password1,#picture1{
+    position:absolute;
+    left:150px;
+    width:200px;
+    height:30px;
+    color:magenta;
+    font-size:20px;
+    border-radius:20px;
+    font-style:italic;
+    border:2px outset magenta;
+    padding-left:6px;
+   }
+   #s1{
+    position:absolute;
+    left:250px;
+    top:180px;
+    background-color:blueviolet;
+    color:magenta;
+    font-size:20px;
+    border-radius:20px;
+    font-style:italic;
+    border:2px outset blueviolet ;
+    padding-left:6px;
+   }
+   #s1:hover{
+    color:blueviolet;
+    background-color:magenta;
+    border:2px outset magenta;
+
+   }
+   fieldset legend:hover{
+    color:magenta;
+   }
+   #s2{
+    position:absolute;
+    left:150px;
+    top:180px;
+    background-color:magenta;
+    color:blueviolet;
+    position:absolute;
+    left:150px;
+    color:blueviolet;
+    font-size:20px;
+    border-radius:20px;
+    font-style:italic;
+    border:2px outset magenta ;
+    padding-left:6px;
+   }
+   #s2:hover{
+    color:magenta;
+    background-color:blueviolet;
+    border:2px outset blueviolet;
+   }
+   #img1{
+    position:absolute;
+    top:20px;
+    left:40px;
+    height:50px;
+    width:50px;
+    border-radius:25px;
+   }
+   legend{
+    position:relative;
+    top:-6px;
+   }
+   #img2{
+    position:absolute;
+    top:550px;
+    right:40px;
+    height:50px;
+    width:50px;
+    border-radius:25px;
+   }
+   img:hover{
+    opacity:0.5;
+   }
+</style>
+</head>
+<body unload="clearInterval(timer);clearTimeout(timer0);clearTimeout(timer1)clearInterval(timer3);">
+
+    <p id="p2"></p>
+     <form  method="post"action="http://localhost/mysite/revssion(html+css+js+php).php" enctype="multipart/form-data" id="form1">
+        <fieldset>
+          <legend >Sign Up Form</legend>
+          Name:<input type="text"  required id="name1" name="name" /><p id="p1"></p><br/>
+          E-mail:<input type="email" required id="email1" name="email"/><p id="p3"></p><br/>
+          Password:<input type="password"required id="password1"name="password"/><p id="p4"></p><br/>
+          Your Picture?<input  type="file"required style="border-radius:3px;border:0px;"id="picture1"name="picture"/><br/>
+          <input  type="submit" value="Submit"id="s1" onclick="" style="height:30px;width:100px;"/>
+          <input type="reset" value="Reset" id="s2" style="height:30px;width:100px;"/>
+       </fieldset>
+     </form> 
+     <br/>
+     <img src="img3.jpg" id="img1"/><br/>
+     <img src="img3.jpg" id="img2"/><br/>
+                              <!--js-->
+    <script>
+        var timer0=setTimeout(function(){
+            window.alert('رمضان كريم ,صلى على رسول الله');
+        },30000);
+        var text="Hello Our Dear";
+        var counter=0;
+        var timer=setInterval(function(){
+            window.p2.innerHTML+=text[counter++];
+            if(counter>=text.length){
+                clearInterval(timer);
+                window.p2.innerHTML+='💗';
+            }
+        },600);
+        /*
+        var data1=window.name1.value;
+        var data2=window.email1.value;
+        var data3=window.password1.value;
+        var data4=window.picture1.value;
+        //notes that its form can't control data untill submit
+        if(/^[A-Z][a-z]+(\s[a-z]+)*$/.test(data1)){
+            window.p1.innerHTML="right";
+            window.form1.action="";
+        }
+        if(/^[a-z]+\d{3}@gmail\.com$/.test(data2)){
+            window.p3.innerHTML="right";
+            window.form1.action="";
+        }
+        if(/^[a-z]+\d+*$/.test(data3)){
+            window.p4.innerHTML="right";
+            window.form1.action="";
+        }
+         */ 
+        var timer1=setTimeout(function(){
+           window.alert('كل عام وانتم بخير');
+           window.p2.innerHTML+="✔";
+            /*    
+           window.name.disabled;
+           window.email.disabled;
+           window.password.disabled;
+           window.picture.disabled; */
+        },50000);
+        var counter2=40;
+        var timer3=setInterval(function(){
+           window.img1.style.left=counter2+=3;
+           if(counter2>=650){
+              clearInterval(timer3);
+              window.img1.style.left=40;
+              window.img1.style.opacity=0.8;
+              window.img1.style.height=40;
+              window.img1.style.width=40;
+           }
+        },100);
+        var counter3=40;
+        var timer00=setInterval(function(){
+            window.img2.style.right=counter3+=3;
+            if(counter3>=650){
+                clearInterval(timer00);
+                window.img2.style.right=40;
+                window.img2.style.opacity=0.8;
+                window.img2.style.height=40;
+                window.img2.style.width=40;
+            }
+        },100);
+    </script>
+</body>
+</html>
